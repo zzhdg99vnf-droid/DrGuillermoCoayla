@@ -1,0 +1,11 @@
+# Archivos que NO deben publicarse en el sitio web
+.git
+.git/
+.github
+.wrangler
+node_modules
+.gitignore
+.assetsignore
+wrangler.jsonc
+*.md
+.claude
