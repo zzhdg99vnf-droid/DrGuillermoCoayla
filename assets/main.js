@@ -194,6 +194,29 @@
     });
   }
 
+  // ---- Pestañas "Conozca su enfermedad"
+  $$('[role="tablist"]').forEach(list => {
+    const tabs = $$('[role="tab"]', list);
+    const select = (tab, focus) => {
+      tabs.forEach(t => {
+        const on = t === tab;
+        t.setAttribute("aria-selected", on);
+        t.tabIndex = on ? 0 : -1;
+        const panel = document.getElementById(t.getAttribute("aria-controls"));
+        if (panel) panel.hidden = !on;
+      });
+      if (focus) tab.focus();
+    };
+    tabs.forEach((t, i) => {
+      t.addEventListener("click", () => select(t));
+      t.addEventListener("keydown", e => {
+        const d = e.key === "ArrowRight" ? 1 : e.key === "ArrowLeft" ? -1 : 0;
+        if (d) { e.preventDefault(); select(tabs[(i + d + tabs.length) % tabs.length], true); }
+      });
+    });
+    select(tabs.find(t => t.getAttribute("aria-selected") === "true") || tabs[0]);
+  });
+
   // ---- Fallback de foto: si no existe la imagen, se muestra el monograma
   $$("img[data-fallback]").forEach(img => {
     const hide = () => { img.style.display = "none"; };

@@ -551,3 +551,34 @@ p { margin: 0 0 1em; }
   .hero__inner > .hero__visual { order: -1; max-width: 300px; margin: 0 auto 10px; }
   .float-card--3 { display: none; }
 }
+
+/* ---------- Conozca su enfermedad (pestañas) ---------- */
+.organ-tabs { display: flex; gap: 10px; justify-content: center; flex-wrap: wrap; margin: 44px 0 28px; }
+.organ-tab { padding: 12px 22px; border-radius: 999px; border: 1px solid var(--line); background: var(--card); cursor: pointer;
+  font: 600 .98rem/1 var(--font-body); color: var(--navy-800); transition: background .3s, color .3s, box-shadow .3s; }
+.organ-tab:hover { border-color: var(--teal-500); }
+.organ-tab[aria-selected="true"] { background: var(--teal-500); color: #fff; border-color: var(--teal-500); box-shadow: 0 10px 24px -12px rgba(18,117,212,.8); }
+.organ-panel { display: grid; grid-template-columns: minmax(0, .9fr) minmax(0, 1.1fr); gap: 40px; align-items: start; animation: fadeUp .5s var(--ease) both; }
+.organ-panel[hidden] { display: none; }
+.organ-img { margin: 0; position: sticky; top: 100px; border-radius: 26px; overflow: hidden; box-shadow: var(--shadow); }
+.organ-img img { width: 100%; height: auto; }
+.organ-body h3 { font-size: clamp(1.8rem, 3vw, 2.4rem); margin-bottom: .4em; }
+.organ-what { color: var(--ink-soft); font-size: 1.04rem; }
+.organ-what strong { color: var(--navy-800); }
+.organ-cards { display: grid; gap: 14px; margin-top: 18px; }
+.organ-card { padding: 20px 22px; border-radius: 18px; background: var(--card); border: 1px solid var(--line); }
+.organ-card h4 { font-family: var(--font-body); font-size: 1rem; margin: 0 0 10px; }
+.organ-card ul { margin: 0; padding-left: 1.1em; color: var(--ink-soft); font-size: .95rem; }
+.organ-card li { margin-bottom: 4px; }
+.organ-card p { margin: 0; color: var(--ink-soft); font-size: .95rem; }
+.organ-card--alarm { border-left: 5px solid var(--rose-400); background: #fff7f7; }
+.organ-card--care { border-left: 5px solid #3fae6a; background: #f6fcf8; }
+.organ-card--treat { border-left: 5px solid var(--teal-500); }
+.organ-links { display: flex; flex-wrap: wrap; gap: 18px; margin-top: 12px; }
+.organ-note { text-align: center; color: var(--ink-soft); font-size: .85rem; margin-top: 26px; }
+@media (max-width: 900px) {
+  .organ-panel { grid-template-columns: 1fr; gap: 22px; }
+  .organ-img { position: static; max-width: 520px; width: 100%; margin: 0 auto; }
+  .organ-tabs { flex-wrap: nowrap; overflow-x: auto; justify-content: flex-start; padding-bottom: 6px; scrollbar-width: none; }
+  .organ-tab { flex: none; }
+}

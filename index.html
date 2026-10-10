@@ -521,6 +521,74 @@
   </div>
 </section>
 
+<!-- ================= CONOZCA SU ENFERMEDAD (pestañas) ================= -->
+<section class="section section--alt" id="conozca">
+  <div class="container">
+    <div class="center" data-reveal>
+      <span class="eyebrow">Conozca su enfermedad</span>
+      <h2>Qué es, cómo se cuida <span class="grad-text">y cómo se trata</span></h2>
+      <p class="lead">Elija un órgano para ver, en pocas líneas, las señales de alarma y los hábitos que lo protegen.</p>
+    </div>
+    <div class="organ-tabs" role="tablist" aria-label="Enfermedades">
+      <button class="organ-tab" role="tab" id="tab-pancreas" aria-controls="panel-pancreas" aria-selected="true">Páncreas</button>
+      <button class="organ-tab" role="tab" id="tab-higado" aria-controls="panel-higado" aria-selected="false" tabindex="-1">Hígado</button>
+      <button class="organ-tab" role="tab" id="tab-vesicula" aria-controls="panel-vesicula" aria-selected="false" tabindex="-1">Vesícula</button>
+      <button class="organ-tab" role="tab" id="tab-vias-biliares" aria-controls="panel-vias-biliares" aria-selected="false" tabindex="-1">Vías biliares</button>
+    </div>
+    <div class="organ-panels" data-reveal>
+    <div class="organ-panel" role="tabpanel" id="panel-pancreas" aria-labelledby="tab-pancreas">
+      <figure class="organ-img"><img src="/assets/ilustraciones/pancreas.svg" alt="Ilustración del páncreas, detrás del estómago y junto al duodeno" width="800" height="640" loading="lazy"></figure>
+      <div class="organ-body">
+        <h3>Páncreas</h3>
+        <p class="organ-what"><strong>¿Qué es?</strong> Es una glándula ubicada detrás del estómago. Produce las enzimas que digieren los alimentos y hormonas como la insulina, que controla el azúcar en la sangre. Sus enfermedades más frecuentes son la pancreatitis, los quistes y los tumores.</p>
+        <div class="organ-cards">
+          <div class="organ-card organ-card--alarm"><h4><span aria-hidden="true">🚩</span> Señales de alarma</h4><ul><li>Dolor intenso en la parte alta del abdomen que se va a la espalda.</li><li>Piel u ojos amarillos con orina oscura.</li><li>Pérdida de peso sin explicación.</li><li>Diabetes que aparece de repente después de los 50 años.</li><li>Heces grasosas, claras o que flotan.</li></ul></div>
+          <div class="organ-card organ-card--care"><h4><span aria-hidden="true">💚</span> Cómo me cuido</h4><ul><li>No fume: es el principal factor de riesgo evitable del cáncer de páncreas.</li><li>Evite o limite el alcohol.</li><li>Mantenga un peso saludable y haga actividad física.</li><li>Trate a tiempo los cálculos de vesícula, la primera causa de pancreatitis.</li><li>Controle la diabetes y los triglicéridos.</li></ul></div>
+          <div class="organ-card organ-card--treat"><h4><span aria-hidden="true">🩺</span> Cómo se trata</h4><p>Depende del diagnóstico: muchos quistes solo se vigilan con resonancia, la pancreatitis se trata en hospital y los tumores pueden requerir cirugía (como la operación de Whipple), planificada junto con oncología.</p><div class="organ-links"><a class="card__link" href="/pancreas">Cirugía de páncreas <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a><a class="card__link" href="/quiste-de-pancreas">Quiste de páncreas <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div></div>
+        </div>
+      </div>
+    </div>
+    <div class="organ-panel" role="tabpanel" id="panel-higado" aria-labelledby="tab-higado">
+      <figure class="organ-img"><img src="/assets/ilustraciones/higado.svg" alt="Ilustración del hígado" width="800" height="640" loading="lazy"></figure>
+      <div class="organ-body">
+        <h3>Hígado</h3>
+        <p class="organ-what"><strong>¿Qué es?</strong> Es el órgano más grande del abdomen. Filtra toxinas, produce la bilis y proteínas esenciales, y almacena energía. Es el único órgano capaz de regenerarse. Puede afectarse por hígado graso, tumores, metástasis o quiste hidatídico.</p>
+        <div class="organ-cards">
+          <div class="organ-card organ-card--alarm"><h4><span aria-hidden="true">🚩</span> Señales de alarma</h4><ul><li>Piel u ojos amarillos.</li><li>Hinchazón del abdomen o de las piernas.</li><li>Dolor o bulto debajo de las costillas derechas.</li><li>Vómitos con sangre o heces negras: es una urgencia.</li><li>Cansancio intenso y pérdida de peso sin causa.</li></ul></div>
+          <div class="organ-card organ-card--care"><h4><span aria-hidden="true">💚</span> Cómo me cuido</h4><ul><li>Limite el alcohol.</li><li>Mantenga un peso saludable: el hígado graso es cada vez más frecuente.</li><li>Vacúnese contra la hepatitis B.</li><li>No se automedique: el exceso de paracetamol, hierbas o suplementos puede dañarlo.</li><li>Lave bien las verduras y no dé vísceras crudas a los perros, para prevenir la hidatidosis.</li></ul></div>
+          <div class="organ-card organ-card--treat"><h4><span aria-hidden="true">🩺</span> Cómo se trata</h4><p>Muchos hallazgos benignos solo se vigilan. Los tumores, las metástasis y el quiste hidatídico pueden requerir cirugía: se extirpa la parte enferma y el hígado sano se regenera.</p><div class="organ-links"><a class="card__link" href="/higado-vias-biliares">Cirugía de hígado <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div></div>
+        </div>
+      </div>
+    </div>
+    <div class="organ-panel" role="tabpanel" id="panel-vesicula" aria-labelledby="tab-vesicula">
+      <figure class="organ-img"><img src="/assets/ilustraciones/vesicula.svg" alt="Ilustración de la vesícula biliar con cálculos, debajo del hígado" width="800" height="640" loading="lazy"></figure>
+      <div class="organ-body">
+        <h3>Vesícula</h3>
+        <p class="organ-what"><strong>¿Qué es?</strong> Es una pequeña bolsa debajo del hígado que guarda la bilis y la libera al comer. Los cálculos (piedras) son muy frecuentes, sobre todo en mujeres, después de embarazos y en personas con sobrepeso.</p>
+        <div class="organ-cards">
+          <div class="organ-card organ-card--alarm"><h4><span aria-hidden="true">🚩</span> Señales de alarma</h4><ul><li>Dolor en la parte alta derecha del abdomen después de comer, que dura horas.</li><li>Dolor con fiebre: puede ser una colecistitis.</li><li>Piel u ojos amarillos.</li><li>Vómitos que no ceden.</li></ul></div>
+          <div class="organ-card organ-card--care"><h4><span aria-hidden="true">💚</span> Cómo me cuido</h4><ul><li>Mantenga un peso saludable y evite las dietas extremas: bajar de peso muy rápido favorece los cálculos.</li><li>No se salte comidas.</li><li>Coma más fibra, frutas y verduras, y menos frituras.</li><li>Haga actividad física con regularidad.</li></ul></div>
+          <div class="organ-card organ-card--treat"><h4><span aria-hidden="true">🩺</span> Cómo se trata</h4><p>Cuando los cálculos dan síntomas, el tratamiento es la colecistectomía laparoscópica: se retira la vesícula por pequeñas incisiones y la mayoría de pacientes se va de alta en unas 24 horas.</p><div class="organ-links"><a class="card__link" href="/vesicula">Cirugía de vesícula <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a><a class="card__link" href="/cuando-operar-la-vesicula">¿Cuándo operar? <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div></div>
+        </div>
+      </div>
+    </div>
+    <div class="organ-panel" role="tabpanel" id="panel-vias-biliares" aria-labelledby="tab-vias-biliares">
+      <figure class="organ-img"><img src="/assets/ilustraciones/vias-biliares.svg" alt="Ilustración de las vías biliares, que llevan la bilis del hígado al intestino" width="800" height="640" loading="lazy"></figure>
+      <div class="organ-body">
+        <h3>Vías biliares</h3>
+        <p class="organ-what"><strong>¿Qué es?</strong> Son los conductos que llevan la bilis del hígado y la vesícula al intestino. Pueden obstruirse por cálculos, estrecheces o tumores, o lesionarse durante una cirugía de vesícula.</p>
+        <div class="organ-cards">
+          <div class="organ-card organ-card--alarm"><h4><span aria-hidden="true">🚩</span> Señales de alarma</h4><ul><li>Piel u ojos amarillos, orina oscura (color té) y heces claras.</li><li>Picazón en todo el cuerpo.</li><li>Fiebre con escalofríos y piel amarilla: puede ser una colangitis, una urgencia.</li><li>Dolor que no mejora después de una operación de vesícula.</li></ul></div>
+          <div class="organ-card organ-card--care"><h4><span aria-hidden="true">💚</span> Cómo me cuido</h4><ul><li>Trate a tiempo los cálculos de vesícula, antes de que pasen al colédoco.</li><li>Opérese con un cirujano con experiencia en vías biliares.</li><li>Consulte pronto si nota la piel amarilla.</li><li>Cumpla sus controles después de una cirugía biliar.</li></ul></div>
+          <div class="organ-card organ-card--treat"><h4><span aria-hidden="true">🩺</span> Cómo se trata</h4><p>Los cálculos del colédoco suelen extraerse por endoscopía (CPRE). Las lesiones y los tumores pueden requerir cirugía de reconstrucción de la vía biliar, realizada por un cirujano hepatobiliar.</p><div class="organ-links"><a class="card__link" href="/higado-vias-biliares">Cirugía de vías biliares <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a><a class="card__link" href="/lesion-de-via-biliar">Lesión de vía biliar <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div></div>
+        </div>
+      </div>
+    </div>
+    </div>
+    <p class="organ-note">Información educativa. Si tiene una señal de alarma, consulte a un médico o acuda a Emergencia.</p>
+  </div>
+</section>
+
 <!-- ================= QUIZ / ORIENTACIÓN ================= -->
 <section class="section section--dark" id="orientacion">
   <div class="container">
