@@ -20,11 +20,11 @@ Sitio estático (HTML + CSS + JS, sin dependencias) publicado en Cloudflare Work
 
 **Cómo verla en local:** `npx wrangler dev` (los enlaces usan URLs limpias, así que abrir el HTML directamente no navega bien).
 
+**Marca:** colores, tipografías (Playfair Display y Source Code Pro) y logo según el Brandbook. Logos en `assets/logo-header.svg`, `assets/logo-blanco.svg` y `assets/logo-color.svg`. Fotos en `assets/dr-coayla*.jpg`.
+
 **Pendiente:**
-- Fotos en `assets/`: `dr-coayla.jpg` (retrato) y `dr-coayla-quirofano.jpg`. Mientras no existan, se muestra el monograma "GC".
-- N.º de CMP y RNE en el pie de página.
 - Testimonios reales con consentimiento (hay una plantilla comentada en `index.html`).
 - Revisión médica de los textos de las guías.
-- Conectar el dominio `www.drcoayla.net` al Worker en Cloudflare: las URLs canónicas y el sitemap ya apuntan a ese dominio.
+- Conectar el dominio propio al Worker en Cloudflare: las URLs canónicas y el sitemap apuntan a `www.drcoayla.net`.
 
 El número de WhatsApp se cambia en una sola línea: `WA_NUMBER` en `assets/main.js`.
